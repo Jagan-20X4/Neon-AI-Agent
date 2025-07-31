@@ -8,7 +8,7 @@
 
 ## 🧠 System Architecture
 
-```mermaid
+```
 flowchart TD
   A[User Speaks 🎤] --> B[record_audio() 🎙️]
   B --> C[transcribe_with_groq() 🧠]
