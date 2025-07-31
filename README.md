@@ -9,13 +9,13 @@
 ## 🧠 System Architecture
 
 ```mermaid
-graph TD
-  A[🎤 User Speaks] --> B[🔙️ record_audio()]
-  B --> C[🧠 transcribe_with_groq()]
-  C --> D[📨 ask_agent()]
-  D --> E[🗞 Response Text]
-  E --> F[🔊 gTTS / ElevenLabs (TTS)]
-  F --> G[🎧 Playback with pygame]
+flowchart TD
+  A[User Speaks 🎤] --> B[record_audio() 🎙️]
+  B --> C[transcribe_with_groq() 🧠]
+  C --> D[ask_agent() 📨]
+  D --> E[Generate Response 🔢]
+  E --> F[gTTS or ElevenLabs 🔊]
+  F --> G[Playback with pygame 🎧]
 ```
 
 ---
@@ -27,7 +27,7 @@ graph TD
 * 🔊 Text-to-speech with **gTTS** (fallback when ElevenLabs fails)
 * 📷 Live webcam video feed via **OpenCV**
 * 🌐 Clean browser UI powered by **Gradio**
-* 🧽 Real-time status synced with terminal logs (e.g., recording state)
+* 🧹 Real-time status synced with terminal logs (e.g., recording state)
 
 ---
 
@@ -35,9 +35,9 @@ graph TD
 
 | Layer           | Tools                                           |
 | --------------- | ----------------------------------------------- |
-| 🎤 Speech       | `gTTS`, , `pygame`                              |
+| 🎤 Speech       | `gTTS`, `ElevenLabs`, `pygame`                  |
 | 🧠 Intelligence | `Groq`, `LangGraph`, `OpenAI`, `Gemini`         |
-| 🖥 Interface    | `Gradio`, `OpenCV`, `Timer`, `Image`, `Chatbot`  |
+| 🖥 Interface    | `Gradio`, `OpenCV`, `Timer`, `Image`, `Chatbot` |
 | 🎧 Audio I/O    | `sounddevice`, `soundfile`                      |
 | ♻️ Management   | `uv` (package manager), `.env` config           |
 
@@ -126,7 +126,7 @@ openai
 python app.py
 ```
 
-> The assistant will launch on: [http://localhost:7860](http://localhost:7860)
+> The assistant will launch on: [http://localhost:7860](http://localhost:7860)<br>
 > Speak to NEON. Get answers. Hear them out.
 
 ---
@@ -140,17 +140,6 @@ python app.py
 2025-07-31 01:41:34,752 - INFO - Audio saved to audio_question.wav
 ```
 
----
-
-## 🥪 What I Learned
-
-* Handling real-time status updates in Gradio UI using timers and shared state
-* Using `uv` for blazing-fast Python dependency management
-* Integrating multiple APIs: **Groq**, **Gemini**, **ElevenLabs**
-* Managing voice playback with `pygame`
-* Syncing terminal output with UI elements in real-time
-
----
 
 ## 💪 Troubleshooting Tips
 
@@ -163,6 +152,6 @@ python app.py
 
 ---
 
-## 🏁 Contributing
+## 🏋️ Contributing
 
 Pull requests and feedback are welcome! Let’s make NEON better together ✨
