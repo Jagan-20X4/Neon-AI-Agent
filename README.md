@@ -35,7 +35,7 @@ flowchart TD
 
 | Layer           | Tools                                           |
 | --------------- | ----------------------------------------------- |
-| 🎤 Speech       | `gTTS`, `ElevenLabs`, `pygame`                  |
+| 🎤 Speech       | `gTTS`,  `pygame`                               |
 | 🧠 Intelligence | `Groq`, `LangGraph`, `OpenAI`, `Gemini`         |
 | 🖥 Interface    | `Gradio`, `OpenCV`, `Timer`, `Image`, `Chatbot` |
 | 🎧 Audio I/O    | `sounddevice`, `soundfile`                      |
