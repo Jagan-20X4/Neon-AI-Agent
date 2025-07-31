@@ -1,4 +1,4 @@
-# 🧑‍🚀 NEON – AI Assistant
+# 🧑‍🚀 NEON – AI Agent
 
 **NEON** is your intelligent voice-based assistant built using **Python**, **Gradio**, **OpenCV**, and **gTTS**, enabling interactive conversations via microphone and webcam right in your browser.
 
