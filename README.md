@@ -14,7 +14,7 @@ flowchart TD
   B --> C[transcribe_with_groq() 🧠]
   C --> D[ask_agent() 📨]
   D --> E[Generate Response 🔢]
-  E --> F[gTTS or ElevenLabs 🔊]
+  E --> F[gTTS 🔊]
   F --> G[Playback with pygame 🎧]
 ```
 
@@ -24,7 +24,7 @@ flowchart TD
 
 * 🎤 **Real-time** speech-to-text transcription with **Groq**
 * 🧠 AI conversation via **Gemini**, **Groq**, or other LLMs
-* 🔊 Text-to-speech with **gTTS** (fallback when ElevenLabs fails)
+* 🔊 Text-to-speech with **gTTS** 
 * 📷 Live webcam video feed via **OpenCV**
 * 🌐 Clean browser UI powered by **Gradio**
 * 🧹 Real-time status synced with terminal logs (e.g., recording state)
@@ -155,3 +155,4 @@ python app.py
 ## 🏋️ Contributing
 
 Pull requests and feedback are welcome! Let’s make NEON better together ✨
+
